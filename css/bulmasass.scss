@@ -14,7 +14,7 @@ $beige-lighter: #EFF0EB;
 $white: #FFFFFF;
 
 
-//mi palette
+//my palette of variables for change the derivated variables of Bulma 
 $color-1: #e0cffc;
 $color-2: #c29ffa;
 $color-3: #a370f7;
@@ -25,36 +25,40 @@ $color-7: #3d0a91;
 $color-8: #290661;
 $color-9: #140330;
 
-button{
-    background-color: #140330;
-    color: #140330;
-}
+//sort of variables of Bulma
+$primary: $color-5;
+$info: #004080;
+$background: $color-8;
+$success: #408000;
+$danger: #800000;
+$warning: #808000;
+$grey-dark: #807080;
+$grey-light: #EFDFEF;
+$link: #008080;
+$text: $color-1;
+$text-strong:$color-1;
+$scheme-main:$color-9; //backgrounds como de las cards
+$shade:$beige-light;
+$input-border-color: $color-1;
+
+$border-light:$color-8;
+
+$message-background-color:$color-6;
+$message-body-color:$color-6;
+
+
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
-$grey-dark: $brown;
-$grey-light: $beige-light;
-$primary: $color-5;
-$link: $pink;
-$text: $color-1;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
-  
-// Update some of Bulma's component variables
+
 
 //div{ background-color: $success};
 $control-border-width: 2px;
-$input-border-color: green;
+
 $input-shadow: none;
 
 // Import only what you need from Bulma
-@import "../node_modules/bulma/sass/utilities/_all.sass";
-@import "../node_modules/bulma/sass/base/_all.sass";
-@import "../node_modules/bulma/sass/elements/button.sass";
-@import "../node_modules/bulma/sass/elements/container.sass";
-@import "../node_modules/bulma/sass/elements/title.sass";
-@import "../node_modules/bulma/sass/form/_all.sass";
-@import "../node_modules/bulma/sass/components/navbar.sass";
-@import "../node_modules/bulma/sass/layout/hero.sass";
-@import "../node_modules/bulma/sass/layout/section.sass";
-@import "../node_modules/bulma/sass/components/menu.sass";
+
+@import "../node_modules//bulma/bulma.sass"

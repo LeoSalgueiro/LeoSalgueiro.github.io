@@ -2,65 +2,298 @@
 <html>
 
 <head>
-    <title>Portfolio Leo</title>
-    <!--Meta para mobilefirst-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio Leo</title>
+  <!--Meta for mobilefirst-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--Stylesheet Bulma-->
-    <link rel="stylesheet" href="../css/mybulmastyle.css">
+  <!--Stylesheet Bulma-->
+  <link rel="stylesheet" href="../css/mybulmastyle.css">
 
+  <!--Stylesheet of icons-->
+  <link rel="stylesheet" href="../public/icons/icofont/icofont.min.css">
 
-    <!--Stylessheets propios-->
-    <link rel="stylesheet" href="../css/imagenes.css">
-    <link rel="stylesheet" href="../css/index.css">
+  <!--own Stylessheets-->
+  <link rel="stylesheet" href="../css/imagenes.css">
+  <link rel="stylesheet" href="../css/index.css">
 </head>
 
-<body>
-    
-    <header></header> 
-    <div id="fondo"> 
-        <main>
-            <div class="buttons">
-                <button class="button is-primary">Primary</button>
-                <button class="button is-link">Link</button>
-              </div>
-            <aside class="menu">
-                <p class="menu-label">General</p>
-                <ul class="menu-list">
-                    <li><a class="green">Dashboard</a></li>
-                    <li><a>Customers</a></li>
-                  </ul>
-                  <p class="menu-label">
-                    Administration
-                  </p>
-                  <ul class="menu-list">
-                    <li><a>Team Settings</a></li>
-                    <li>
-                      <a class="is-active">Manage Your Team</a>
-                      <ul>
-                        <li><a>Members</a></li>
-                        <li><a>Plugins</a></li>
-                        <li><a>Add a member</a></li>
-                      </ul>
-                    </li>
-                    <li><a>Invitations</a></li>
-                    <li><a>Cloud Storage Environment Settings</a></li>
-                    <li><a>Authentication</a></li>
-                  </ul>
-            </aside>
-            <section>
-                
-            </section>
-            
-            <article></article>
-        </main>
-        
-        <footer></footer>
+<body id="fondo">
+
+  <header></header>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        <img src="../public/logos/logo1.png" width="40" height="40">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
     </div>
-    <nav></nav>
-    
-  
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">
+          Experience
+        </a>
+
+        <a class="navbar-item">
+          Skills and Tools
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Do you want know more?
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              About me
+            </a>
+            <a class="navbar-item">
+              Contact me
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">
+              Let me a comment!
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar-end breadcrumb ">
+        <div class="navbar-item">
+          <ul>
+            <li>
+              <a href="#">
+                <span class="icon is-small">
+                  <i class="icofont-beard"></i>
+                </span>
+                <span>Leonel Navarro</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon is-small">
+                  <i class="icofont-console"></i>
+                </span>
+                <span>Software Developer</span>
+              </a>
+            </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div>
+
+    <main class="m-1">
+      <div class="columns">
+        <div class="column has-block-spacing">
+          <article class="message is-dark">
+            <div class="message-header">
+              <p>Dark</p>
+              <button class="delete" aria-label="delete"></button>
+            </div>
+            <div class="message-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus
+              quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam,
+              et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec
+              sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec
+              dui urna, vehicula et sem eget, facilisis sodales sem.
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="columns">
+        <aside class="column has-block-spacing">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                Component
+              </p>
+              <button class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+                <br>
+                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">Save</a>
+              <a href="#" class="card-footer-item">Edit</a>
+              <a href="#" class="card-footer-item">Delete</a>
+            </footer>
+          </div>
+        </aside>
+
+
+        <article class="column has-block-spacing">
+
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                Component
+              </p>
+              <button class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+                <br>
+                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">Save</a>
+              <a href="#" class="card-footer-item">Edit</a>
+              <a href="#" class="card-footer-item">Delete</a>
+            </footer>
+          </div>
+
+        </article>
+      </div>
+      <div class="columns">
+        <article class="column has-block-spacing">
+
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                Component
+              </p>
+              <button class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+                <br>
+                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">Save</a>
+              <a href="#" class="card-footer-item">Edit</a>
+              <a href="#" class="card-footer-item">Delete</a>
+            </footer>
+          </div>
+
+        </article>
+        <article class="column has-block-spacing">
+
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                Component
+              </p>
+              <button class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+                <br>
+                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">Save</a>
+              <a href="#" class="card-footer-item">Edit</a>
+              <a href="#" class="card-footer-item">Delete</a>
+            </footer>
+          </div>
+
+        </article>
+        <article class="column has-block-spacing">
+
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                Component
+              </p>
+              <button class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+                <br>
+                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">Save</a>
+              <a href="#" class="card-footer-item">Edit</a>
+              <a href="#" class="card-footer-item">Delete</a>
+            </footer>
+          </div>
+
+        </article>
+      </div>
+      <div class="columns">
+        <article class="column has-block-spacing">
+
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                Component
+              </p>
+              <button class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+                <br>
+                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">Save</a>
+              <a href="#" class="card-footer-item">Edit</a>
+              <a href="#" class="card-footer-item">Delete</a>
+            </footer>
+          </div>
+
+        </article>
+      </div>
+    </main>
+
+    <footer></footer>
+  </div>
+
+
+
 
 </body>
 
