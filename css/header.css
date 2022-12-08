@@ -1,0 +1,13 @@
+.navBarDark{
+    opacity: 0;
+    transition: 2s ease-in;
+    
+    background-color: #290661;
+    
+}
+.navBarLight{
+    color: #c29ffa;
+    opacity: 1;
+    transition: 2s ease-in;
+    background-color: transparent;
+}
